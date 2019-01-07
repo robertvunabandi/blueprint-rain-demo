@@ -10,6 +10,15 @@
 			border-top: 1px solid black;
 			border-bottom: 1px solid black;
 		}
+		#controls {
+			position: fixed;
+			bottom: 0;
+			padding: 10px;
+		}
+		#controls div {
+			position: relative;
+			display: inline-block;
+		}
 	</style>
 	<!-- link easeljs for canvas -->
 	<script type="text/javascript" src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
@@ -17,5 +26,11 @@
 </head>
 <body>
 <canvas id='canvas'></canvas>
+<div id="controls">
+	<div>
+		<input type="button" id="start" value="start rain"/>
+		<input type="button" id="stop" value="stop rain"/>
+	</div>
+</div>
 </body>
 </html>
